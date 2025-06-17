@@ -60,24 +60,41 @@
 //   return 0;
 // }
 
-// COMPARING TWO STRINGS //
+// Topic was started again from scratch //
 
-#include<iostream>
-#include<cstring>
-using namespace std;
+// #include<iostream>
+// #include<string>
+// using namespace std;
 
-class String
-{ char a[100];
-  char b[100];
-  public:
-
-  String(){}
-  String(String s1,String s2)
-  {
-    strcpy(a,s1);
-  }
+// class Str1
+// {
+//    string s1;
+// public:
+//   Str1(string s)
+//   {
+//     s1=s;
+//   }  
   
-  
-  
+//   Str1 operator +(Str1 st)
+//   { string temp;
+//     temp= s1 + st.s1;
+//     return Str1(temp); 
+//   }
 
-};
+//   friend ostream& operator << (ostream &out, const Str1 Obj) //ostream mtlb outstream which enables chaining 
+//   {
+//     out << Obj.s1;
+//     return out;
+//   }
+
+// };
+
+// int main()
+// { Str1 st1("Manthan");
+//   Str1 st2("Pratik");
+//   Str1 st3("");
+//    st3=st1+st2;
+//   cout<<"String after concentation="<<st3<<endl; 
+// }
+
+
