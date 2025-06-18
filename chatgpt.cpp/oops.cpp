@@ -399,3 +399,35 @@ int main()
   p->pay(2000);
   return 0;
 }
+
+#include<iostream>
+using namespace std;
+class Transaction
+{ public:
+  virtual void perform(int x)=0;
+};
+
+class Deposit:public Transaction
+{ public:
+  void perform(int x)
+  {
+     cout<<"Rupees "<<x<<" deposited successfully!"<<endl;
+  }  
+};
+
+class Withdraw:public Transaction
+{ public:
+  void perform(int x)
+  {
+    cout<<"Rupees "<<x<<" withdrawn successfully!"<<endl;
+  }
+};
+
+int main()
+{ Transaction*t1 = new Deposit();
+  Transaction*t2 = new Withdraw(); 
+  t1->perform(200000);
+  t2->perform(1000); 
+   return 0;
+}
+
