@@ -180,4 +180,108 @@
 //   r.calculatetotal();
 //   return 0;
 // };
- 
+
+// POLYMORPHISM          // Compile time polymorphism uses operator overloading or function overloading 
+// #include<iostream>
+// using namespace std;
+// class student
+// { public:
+  
+//     void calculate(int a,int b)
+//     {  
+//         cout<<"Value of A="<<a<<" Value of B="<<b<<endl;
+//         cout<<"Addition="<<a+b<<endl;
+//     }
+
+//     void calculate(float b,float c)
+//     { 
+//         cout<<"Value of A="<<b<<" Value of B="<<c<<endl;
+//         cout<<"Addition="<<b+c<<endl;   
+//     }
+
+//     void calculate(int a,float b)
+//     { 
+//         cout<<"Value of A="<<a<<" Value of B="<<b<<endl;
+//         cout<<"Addition="<<a+b<<endl;
+//     }
+
+// };
+
+// int main()
+// { student s;
+//   s.calculate(3,4);
+//   s.calculate(3.5f,2.5f);
+//   s.calculate(3,2.5f);
+//   return 0;
+// }
+
+// Run time polymorphism 
+
+//  #include<iostream>
+//  using namespace std;
+//  class People
+//  { public:
+//     virtual void condition()=0;
+//  };
+
+//  class EverythingGood:public People
+//  { public:
+//    void condition()
+//    {
+//     cout<<"People condition=ALL GOOD!"<<endl;
+//    }
+//  }; 
+//   class Handicapped:public People
+//   { public:
+//     void condition()
+//     {
+//     cout<<"People condition=Handicapped!"<<endl;
+//     } 
+//  };
+
+//  int main()
+//  { People *P;
+//    EverythingGood e;
+//    Handicapped h;
+//    P=&e;
+//    P->condition();
+//    P=&h;
+//    P->condition();
+//    return 0;
+//  }
+
+// abstraction
+// Same Code performs Abstraction concept of oops.
+// #include<iostream>
+// using namespace std;
+// class Person
+// { public:
+//   virtual void condition()=0;  // It becomes pure virtual function i.e abstract class  
+// };
+
+// class EverythingGood:public Person
+// { public:
+//   void condition()
+//   {
+//     cout<<"Person's condition=ALL GOOD!"<<endl;
+//   }
+// };
+
+// class Handicapp:public Person
+// { public:
+//   void condition()
+//   {
+//     cout<<"Person's condition=Handicapped!"<<endl;
+//   }
+// };
+
+// int main()
+// { Person *p;
+//   EverythingGood E;
+//   Handicapp H;
+//   p=&E;
+//   p->condition();
+//   p=&H; 
+//   p->condition();
+//   return 0;
+// }
